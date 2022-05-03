@@ -7,7 +7,7 @@ export default function Empty() {
       <EmptyImage
         source={require("../assets/images/emptytodo-removebg-preview.png")}
       />
-      <EmptyText>Add To-Do.</EmptyText>
+      <EmptyText>Adcione algo para se lembrar.</EmptyText>
     </ComponentContainer>
   );
 }
@@ -21,11 +21,13 @@ const ComponentContainer = styled.View`
 const EmptyImage = styled.Image`
   width: 350px;
   height: 200px;
+  margin-bottom: 20px;
+  margin-top: -200px;
 `;
 
 const EmptyText = styled.Text`
   color: white;
   font-family: poppins-bold;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 15px;
 `;

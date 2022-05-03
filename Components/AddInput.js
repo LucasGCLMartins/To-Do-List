@@ -13,7 +13,7 @@ export default function AddInput({ submitHandler }) {
   return (
     <ComponentContainer>
       <InputContainer>
-        <Input placeholder="Add Task..." onChangeText={onChangeText} />
+        <Textarea placeholder="Adcione algo..." onChangeText={onChangeText} />
       </InputContainer>
       <SubmitButton
         onPress={() => {
@@ -33,16 +33,18 @@ const ComponentContainer = styled.View`
 const InputContainer = styled.View`
   flex-direction: row;
   border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
 `;
 
-const Input = styled.TextInput`
+const Textarea = styled.TextInput`
   font-family: poppins-regular;
   font-size: 20px;
   background-color: white;
   width: 300px;
   margin-right: 20px;
   padding: 10px;
-  margin-bottom: 20px;
   border-radius: 10px;
 `;
 
@@ -50,7 +52,7 @@ const SubmitButton = styled.TouchableOpacity`
   width: 50px;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
   margin-bottom: 20px;
   border-radius: 50px;
 `;
