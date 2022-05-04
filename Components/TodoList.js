@@ -33,20 +33,20 @@ const ListContainer = styled.TouchableOpacity`
 `;
 
 const ComponentContainer = styled.View`
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  height: auto;
-  width: auto;
+  
 `;
 
 const TextItem = styled.Text`
   color: black;
-  width: 260px;
+  width: 250px;
   height: auto;
   font-size: 20px;
   margin-top: 10px;
   margin-left: 10px;
   font-family: poppins-regular;
+  
 `;
 
 const IconContainer = styled.TouchableOpacity`

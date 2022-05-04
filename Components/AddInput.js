@@ -33,8 +33,8 @@ const ComponentContainer = styled.View`
 const InputContainer = styled.View`
   flex-direction: row;
   border-radius: 10px;
-  width: 90%;
-  margin-left: 5%;
+  width: 270px;
+  margin-left: 15px;
   margin-bottom: 20px;
 `;
 
@@ -42,8 +42,7 @@ const Textarea = styled.TextInput`
   font-family: poppins-regular;
   font-size: 20px;
   background-color: white;
-  width: 300px;
-  margin-right: 20px;
+  width: 320px;
   padding: 10px;
   border-radius: 10px;
 `;
@@ -54,5 +53,6 @@ const SubmitButton = styled.TouchableOpacity`
   align-items: center;
   background-color: white;
   margin-bottom: 20px;
+  margin-left: -5px;
   border-radius: 50px;
 `;
