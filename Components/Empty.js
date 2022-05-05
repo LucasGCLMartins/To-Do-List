@@ -15,14 +15,13 @@ export default function Empty() {
 const ComponentContainer = styled.View`
   align-items: center;
   justify-content: center;
-  height: 650px;
+  height: 500px;
 `;
 
 const EmptyImage = styled.Image`
   width: 350px;
   height: 200px;
   margin-bottom: 20px;
-  margin-top: -200px;
 `;
 
 const EmptyText = styled.Text`
