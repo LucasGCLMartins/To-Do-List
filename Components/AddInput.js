@@ -4,22 +4,15 @@ import styled from "styled-components";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function AddInput({ submitHandler }) {
+
   const [value, setValue] = useState("");
-
-  const onChangeText = (text) => {
-    setValue(text);
-  };
-
+ 
   return (
     <ComponentContainer>
       <InputContainer>
-        <Textarea placeholder="Adcione algo..." onChangeText={onChangeText} />
+        <TextInput placeholder="Adcione algo..." onChangeText={newText => setValue(newText)} />
       </InputContainer>
-      <SubmitButton
-        onPress={() => {
-          setValue(submitHandler(value));
-        }}
-      >
+      <SubmitButton onPress={() => { submitHandler(value)}}>
         <AntDesign name="plus" size={24} color="midnightblue" />
       </SubmitButton>
     </ComponentContainer>
@@ -38,7 +31,7 @@ const InputContainer = styled.View`
   margin-bottom: 20px;
 `;
 
-const Textarea = styled.TextInput`
+const TextInput = styled.TextInput`
   font-family: poppins-regular;
   font-size: 20px;
   background-color: white;

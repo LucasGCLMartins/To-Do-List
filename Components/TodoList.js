@@ -1,6 +1,5 @@
 import React from "react";
 import { View } from "react-native";
-import { Entypo } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import styled from "styled-components";
 import { Checkbox } from 'react-native-paper';
@@ -11,14 +10,14 @@ export default function TodoList({ item, deleteItem }) {
   return (
     <ComponentContainer>
       <ListContainer>
-        <View>
-        <Checkbox
-          status={checked ? 'checked' : 'unchecked'}
-          onPress={() => {
-            setChecked(!checked);
-          }}
-        />
-        </View>
+        <CirlceContainer>
+          <Checkbox
+            status={checked ? 'checked' : 'unchecked'}
+            onPress={() => {
+              setChecked(!checked);
+            }}
+          />
+        </CirlceContainer>
         <View>
           <TextItem>{item.value}</TextItem>
         </View>
